@@ -1,0 +1,8 @@
+@media only screen and (max-width: 560px) {
+    img {
+      display: block;
+      margin: 0 auto; /* ทำให้รูปภาพมาอยู่กึ่งกลางหน้าจอ */
+      max-width: 100%; /* ให้รูปภาพไม่เกินขนาดของหน้าจอ */
+      height: auto; /* รักษาสัดส่วนของรูปภาพ */
+    }
+  }
