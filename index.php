@@ -81,4 +81,5 @@ mysqli_close($conn);
             window.location.href='delete.php?id=' +id;
         }
     }
+    // comment
 </script>
