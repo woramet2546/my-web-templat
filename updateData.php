@@ -6,6 +6,7 @@
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $telephone = $_POST['telephone'];
+    $position = $_POST['ptn'];
     
     // ตรวจสอบว่ามีการอัพโหลดรูปภาพหรือไม่
     if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
@@ -31,7 +32,8 @@
         name = '$fname',
         surname = '$lname',
         telephone = '$telephone',
-        image = '$image'
+        image = '$image',
+        position = '$position'
     WHERE id = '$id'";
 
 

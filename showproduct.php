@@ -60,7 +60,7 @@
                 <td class="text-center"><?php echo $row["amount"]?></td>
                 <td><img src="image/<?php echo $row['image']?>"width="100px" class="zoom"></td>
                 <td><a href="edit_product.php?id=<?php echo $row["pro_id"] ?>" class="btn btn-warning btn-sm">Edit</a></td>
-                <td><a href="delete.php?id=<?php echo $row['pro_id'];?>" class="btn btn-danger btn-sm">Delete</a></td>
+    <td><a href="deletepd.php?idproduct=<?php echo $row['pro_id']; ?>" onclick="return confirmDelete();" class="btn btn-danger">Delete</a></td>
             </tr>
                     <!-- เปิด PHP2 -->
     <?php } ?>
@@ -70,5 +70,13 @@
         </div>
     </div>
     <link rel="stylesheet" href="Bootsrap5/css/js/bootstrap.bundle.min.js">
+    <!-- การสร้าง function javaScript -->
+
+<script>
+    function confirmDelete() {
+        var confirmResult = confirm('คุณต้องการลบข้อมูลคนพนักงานนี้?');
+        return confirmResult;
+    }
+</script>
 </body>
 </html>

@@ -26,6 +26,8 @@ require 'config.php';
                 <input type="text" class="form-control" name="fname" required>
                 <label for="">นามสกุล:</label>
                 <input type="text" class="form-control" name="lname" required>
+                <label for="">แผนก:</label>
+                <input type="text" class="form-control" name="ptn" required>
                 <label for="">เบอร์โทรศัพท์:</label>
                 <input type="number" class="form-control" name="telephone" required>
                 <label for="" class="mt-1">รูปภาพ:</label><br>

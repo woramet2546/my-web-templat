@@ -6,6 +6,8 @@
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $telephone = $_POST['telephone'];
+        $position = $_POST['ptn'];
+        
         
         // รับข้อมูลรูปภาพ
         $image = $_FILES['image']['name'];
@@ -15,7 +17,7 @@
         $target = "imageindex/" . basename($image);
         
         // เพิ่มข้อมูลลงในฐานข้อมูล
-        $sql = "INSERT INTO member (name, surname, telephone, image) VALUES ('$fname', '$lname', '$telephone', '$image')";
+        $sql = "INSERT INTO member (name, surname, telephone, image, position) VALUES ('$fname', '$lname', '$telephone', '$image','$position')";
         
         if (move_uploaded_file($image_tmp, $target)) {
             echo "รูปภาพถูกอัพโหลดเรียบร้อยแล้ว";

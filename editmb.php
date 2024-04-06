@@ -25,8 +25,6 @@
 </head>
 <body>
 
-<body>
-
 <div class="container">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-6 mt-5">
@@ -39,6 +37,8 @@
                 <input type="text" class="form-control" name="fname" value="<?php echo$row['name']?>">
                 <label for="">นามสกุล:</label>
                 <input type="text" class="form-control" name="lname" value="<?php echo$row['surname']?>">
+                <label for="">แผนก:</label>
+                <input type="text" class="form-control" name="ptn" value="<?php echo$row['position']?>">
                 <label for="">เบอร์โทรศัพท์:</label>
                 <input type="number" class="form-control" name="telephone" value="<?php echo$row['telephone']?>">
                 <label for="" class="mt-1">รูปภาพ:</label><br>
@@ -57,17 +57,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.7/dist/sweetalert2.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-
-</body>
-</html>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.7/dist/sweetalert2.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 
