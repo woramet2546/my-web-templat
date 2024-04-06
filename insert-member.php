@@ -25,7 +25,8 @@
         
         // ทำการ query ข้อมูล
         if (mysqli_query($conn, $sql)) {
-            echo "บันทึกข้อมูลเรียบร้อยแล้ว";
+            echo "<script>alert('อัพเดทข้อมูลสำเร็จแล้ว');</script>";
+            echo "<script>window.location='index.php'</script>";
         } else {
             echo "มีปัญหาในการบันทึกข้อมูล: " . mysqli_error($conn);
         }

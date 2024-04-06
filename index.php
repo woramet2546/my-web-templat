@@ -57,7 +57,7 @@ while($row=mysqli_fetch_array($result)){
         <td><?php echo $row["telephone"]?></td>
         <td><img src="imageindex/<?php echo $row['image']?>"width="100px" class="zoom"></td>
         <td><a href="editmb.php?id=<?php echo $row["id"]?>" class="btn btn-warning">Edit</a></td>
-        <td><a href="delete.php" onclick="confirmDelete(<?php echo $row['id']; ?>)" class="btn btn-danger">Delete</a></td>
+        <td><a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>
     </tr>
 <?php
 }
